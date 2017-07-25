@@ -273,7 +273,7 @@ body {
 */
 
 
-/* (SIDEBAR) 
+/* (SIDEBAR)
 
 .sidebar {
     -ms-grid-column: 2;
@@ -363,6 +363,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5em;
     font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .content > article > ul {
