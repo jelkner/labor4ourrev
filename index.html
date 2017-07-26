@@ -19,6 +19,17 @@
 </head>
 
 <body>
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.10";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
   <div id="main-box">
     <header id="header" class="header">
       <div id="banner">
@@ -76,13 +87,16 @@
         </li>
       </ul>
     </aside> -->
-    <main id="main" class="main">
+    <!-- <main id="main" class="main">
       <div class="content">
-        <article>
-          <h1 class="article-title">Home Labor for Our Revolution</h1>
-        </article>
+
       </div>
-    </main>
+    </main> -->
+    <div id="fb-box">
+      <div class="fb-page" data-href="https://www.facebook.com/LaborforOurRevolution/" data-tabs="timeline,messages,events" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+        <blockquote cite="https://www.facebook.com/LaborforOurRevolution/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/LaborforOurRevolution/">Labor for Our Revolution</a></blockquote>
+      </div>
+    </div>
     <footer id="footer" class="footer">
       <span class="copyright">Designed by:</span>
       <a target="_blank" href="http://novawebdevelopment.com/">
