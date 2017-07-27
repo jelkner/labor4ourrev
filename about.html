@@ -19,6 +19,17 @@
 </head>
 
 <body>
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.10";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
   <div id="main-box">
     <header id="header" class="header">
       <div id="banner">
@@ -48,34 +59,13 @@
         </ul>
       </div>
     </nav>
-    <!-- <aside class="sidebar">
-      <ul class="sidebar_item">
-        <h1 class="sidebar_title">SIDEBAR ONE</h1>
-       <li class="new-item">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, odit.
-          </p>
-        </li>
-        <li class="new-item">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, odit.
-          </p>
-        </li>
-      </ul>
-      <ul class="sidebar_item">
-        <h1 class="sidebar_title">SIDEBAR TWO</h1>
-        <li class="new-item">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, odit.
-          </p>
-        </li>
-        <li class="new-item">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, odit.
-          </p>
-        </li>
-      </ul>
-    </aside> -->
+    <aside class="sidebar">
+      <div id="fb-box">
+        <div class="fb-page" data-href="https://www.facebook.com/LaborforOurRevolution/" data-tabs="timeline,messages,events" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+          <blockquote cite="https://www.facebook.com/LaborforOurRevolution/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/LaborforOurRevolution/">Labor for Our Revolution</a></blockquote>
+        </div>
+      </div>
+    </aside>
     <main id="main" class="main">
       <div class="content">
         <article>
