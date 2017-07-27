@@ -234,13 +234,17 @@ body {
   color: #FFF;
 }
 
+.social-items>li>a.mail {
+  background: #CF4647;
+  color: #FFF;
+}
+
 .social-items>li>a.tw {
   background: #55acee;
   color: #FFF;
 }
 
-.social-items>li>a.fb:hover,
-.social-items>li>a.tw:hover {
+.social-items>li>a:hover {
   text-shadow: 0 0 5px #ddd;
 }
 
@@ -301,6 +305,22 @@ body {
   padding-left: 25px;
 }
 
+.content>article>.article-title:before {
+  position: absolute;
+  font-family: FontAwesome;
+  content: '\f02e';
+  font-size: .75em;
+  left: 0;
+}
+
+.content>article>.sub-title:before {
+  position: absolute;
+  font-family: FontAwesome;
+  content: '\f105';
+  font-size: .65em;
+  left: 10px;
+}
+
 .content>article>p {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5em;
@@ -327,52 +347,14 @@ body {
   margin: 0;
 }
 
-.content>article>a>.article-image-img {
-  display: inline-block;
-  max-width: 300px;
-  width: 100%;
-  border: 4px solid #DEDEDE;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  border-radius: 5px;
+.content>article .link {
+  color: #CF4647;
+  border-bottom: 1px dotted #CF4647;
 }
 
-.content>article>.article-title:before {
-  position: absolute;
-  font-family: FontAwesome;
-  content: '\f02e';
-  font-size: .75em;
-  left: 0;
-}
-
-.content>article .read__more {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  color: #111;
-  font-size: .8em;
-  text-transform: uppercase;
-  display: inline-block;
-  padding: 5px 20px;
-  border: 1px solid rgba(0, 0, 0, .2);
-  background: rgba(11, 11, 11, .1);
-  position: relative;
-  border-radius: 2px;
-}
-
-.content>article .read__more:before {
-  position: absolute;
-  font-family: FontAwesome;
-  content: '\f08e';
-  left: 5px;
-  top: 8px;
-}
-
-.content>article .read__more:hover {
-  background: #91bdf3;
+.content>article .link:hover {
+  border-bottom: 1px solid #922626;
+  color: #922626;
 }
 
 .content>article .download_link {
@@ -381,21 +363,24 @@ body {
   -webkit-transition: all .3s;
   transition: all .3s;
   color: #111;
-  font-size: .8em;
-  text-transform: uppercase;
+  font-size: .9em;
+  font-weight: 400;
   display: inline-block;
-  padding: 10px 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 20px;
   border: 1px solid rgba(0, 0, 0, .2);
   background: rgba(11, 11, 11, .1);
   position: relative;
-  right: -0;
 }
 
 .content>article .download_link:before {
   position: absolute;
   font-family: FontAwesome;
-  content: '\f063';
-  left: 5px;
+  content: '\f019';
+  left: 10px;
+  top: 1em;
 }
 
 .content>article .download_link:hover {
